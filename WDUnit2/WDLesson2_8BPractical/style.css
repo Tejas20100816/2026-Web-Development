@@ -1,2 +1,83 @@
 /* Challenge 2: Use w3SchoolsMockUp.png to help you write the necessary CSS rules.
    Hint: Remember all the fundamental CSS rules when working with flexboxes */
+
+html, body{
+   margin: 0;
+   font-family:sans-serif
+}
+
+.container{
+   display: flex;
+}
+
+#banner{
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 10px;
+}
+
+#banner div:first-child {
+   font-size: 16pt;
+}
+
+nav {
+   background-color: green;
+  padding: 14px 10px;
+  justify-content: space-between;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14pt;
+  flex: 1;
+}
+
+
+nav a:last-child {
+  text-align: right;
+  padding-right: 20px;
+}
+
+#body {
+  align-items: stretch;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  padding: 10px 25px 10px 10px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+#links a {
+  color: black;
+  text-decoration: none;
+  padding: 6px 0;
+  font-size: 11pt;
+}
+
+#links a:hover {
+  background-color: #dddddd;
+}
+
+#main, #sample {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#footer {
+  background-color: green;
+color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 10pt;
+}
